@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>    
+    <class name="vo.ShareRecordVO" table="ShareRecord">
+        
+        <id name="sharerecordid" type="long" column="ShareRecordID">
+        <generator class="increment"/>
+        </id>
+        
+        <property name="userrecordid">
+        <column name="UserRecordID"/>
+        </property>
+        
+        <property name="trustee">
+        <column name="Trustee"/>
+        </property>
+        
+        <property name="trustedcontact">
+        <column name="TrustedContact"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>
+

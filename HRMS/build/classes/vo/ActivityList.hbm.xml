@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    
+    <class name="vo.ActivityListVO" table="ActivityList">
+        
+        <id name="activityid" type="long" column="ActivityList">
+        <generator class="increment"/>
+        </id>
+        
+        
+        <property name="userrecordid">
+        <column name="UserRecordID"/>
+        </property>
+        
+        <property name="activitytype">
+        <column name="ActivityType"/>
+        </property>
+        
+        <property name="activitydate">
+        <column name="ActivityDate"/>
+        </property>
+        
+        <property name="activityby">
+        <column name="ActivityBy"/>
+        </property>
+        
+        
+    </class>
+        
+    
+</hibernate-mapping>
+

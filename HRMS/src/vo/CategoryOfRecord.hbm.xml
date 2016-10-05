@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.Category_Of_RecordVO" table="CategoryOfRecords">
+  <id name="categoryofrecordid" type="long" column="CategoryOfRecordID" >
+   <generator class="increment"/>
+  </id>
+
+<property name="categoryofrecordid">
+  <column name="Category_Of_Records"/>
+  </property>
+  
+  <property name="categoryofrecord">
+  <column name="Category_Of_Record"/>
+  </property>
+  
+ </class>
+</hibernate-mapping>
+

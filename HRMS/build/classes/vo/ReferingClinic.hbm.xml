@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    
+    <class name="vo.ReferingClinicVO" table="ReferingClinic">
+        
+        <id name="clinicid" type="long" column="ClinicID">
+        <generator class="increment"/>
+        </id>
+        
+        
+        <property name="clinicname">
+        <column name="ClinicName"/>
+        </property>
+        
+        <property name="clinicprimaryemailid">
+        <column name="PrimaryEmailID"/>
+        </property>
+        
+        <property name="clinicsecondaryemailid">
+        <column name="SecondaryEmailID"/>
+        </property>
+       
+        <property name="clinicphonework">
+        <column name="Phone_Work"/>
+        </property>
+       
+        <property name="clinicphonehome">
+        <column name="Phone_Home"/>
+        </property>
+        
+        <property name="clinicphonemobile">
+        <column name="Phone_Mobile"/>
+        </property>
+        
+        <property name="cliniccountry">
+        <column name="Country"/>
+        </property>
+        
+        <property name="clinicstate">
+        <column name="State"/>
+        </property>
+        
+        <property name="cliniccity">
+        <column name="City"/>
+        </property>
+    </class>
+        
+    
+</hibernate-mapping>
+

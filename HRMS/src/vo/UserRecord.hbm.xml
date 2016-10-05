@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.UserRecordVO" table="UserRecord">
+      
+  <id name="userRecordid" type="long" column="UserRecordID" >
+   <generator class="increment"/>
+  </id>
+	
+  <property name="clinicid">
+  <column name="ClinicID"/>
+  </property>
+  
+  
+  <property name="userid">
+  <column name="UserID"/>
+  </property>
+  
+  <property name="typeofRcdid">
+  <column name="TypeofRecordID"/>
+  </property>
+  
+  <property name="title">
+  <column name="Title"/>
+  </property>
+  
+  <property name="dateofRcd">
+  <column name="DateofRecord"/>
+  </property>
+  
+  <property name="conclusion">
+  <column name="Conclusion"/>
+  </property>
+  
+  
+  <property name="remarks">
+  <column name="Remarks" length="1000" />
+  </property>
+  
+  <property name="attachment">
+  <column name="Attachment"/>
+  </property>
+  
+  <property name="attachmenttype">
+  <column name="AttachmentType"/>
+  </property>
+  
+ </class>
+</hibernate-mapping>
+

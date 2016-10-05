@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    
+     <session-factory>
+        
+	    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+       
+	    <property name="hibernate.connection.url">jdbc:mysql://localhost/hrms</property>
+      
+	    <property name="hibernate.connection.username">root</property>
+        
+	    <property name="connection.password">root</property>
+        
+        <property name="connection.pool_size">1</property>
+       
+	    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+	    <property name="show_sql">true</property>
+        
+	    <property name="hbm2ddl.auto">update</property>
+       
+	    <mapping resource="vo/UserRecord.hbm.xml"/>
+       
+	    <mapping resource="vo/UserLogin.hbm.xml"/>
+
+	    <mapping resource="vo/UserProfile.hbm.xml"/>
+	    
+	    <mapping resource="vo/ActivityList.hbm.xml"/>
+	    
+	    <mapping resource="vo/country.hbm.xml"/>
+	   
+	    <mapping resource="vo/state.hbm.xml"/>
+	    
+	    <mapping resource="vo/city.hbm.xml"/>
+	    
+	    <mapping resource="vo/Notes.hbm.xml"/>
+	    
+	    <mapping resource="vo/ReferingClinic.hbm.xml" />
+	    
+	    <mapping resource="vo/ShareRecord.hbm.xml" />
+	    
+	    <mapping resource="vo/CategoryOfRecord.hbm.xml" />
+	    
+	    <mapping resource="vo/TypeOfRecord.hbm.xml" />
+	    
+     </session-factory>
+
+</hibernate-configuration>

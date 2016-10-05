@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    
+    <class name="vo.UserLoginVO" table="UserLogin">
+        
+        <id name="userid" type="long" column="UserID">
+        <generator class="increment"/>
+        </id>
+        <property name="fstname">
+        <column name="FirstName"/>
+        </property>
+        
+        <property name="mdlname">
+        <column name="MiddleName"/>
+        </property>
+        
+        <property name="lstname">
+        <column name="LastName"/>
+        </property>
+        
+        <property name="username">
+        <column name="UserName"/>
+        </property>
+        
+        <property name="password">
+        <column name="Password"/>
+        </property>
+        
+        <property name="regtype">
+        <column name="RegistrationType"/>
+        </property>
+        
+        <property name="adddate">
+        <column name="AddDate"/>
+        </property>
+        
+        
+    </class>
+        
+    
+</hibernate-mapping>
+

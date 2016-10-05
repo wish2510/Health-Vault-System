@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.UserProfileVO" table="UserProfile">
+      
+  <id name="userProfileid" type="long" column="UserProfile_ID" >
+   <generator class="increment"/>
+  </id>
+
+  
+  <property name="userid" >
+  <column name="User_ID"/>
+  </property>
+  
+  <property name="country">
+  <column name="Country"/>
+  </property>
+  
+  <property name="address">
+  <column name="Adress"/>
+  </property>
+  
+  <property name="city">
+  <column name="City"/>
+  </property>
+  
+  <property name="state">
+  <column name="State"/>
+  </property>
+  
+  
+  <property name="phonehome">
+  <column name="Phone_Home" />
+  </property>
+ 
+  <property name="phonework">
+  <column name="Phone_Work" />
+  </property>
+  
+  <property name="phonemobile">
+  <column name="Phone_Mobile" />
+  </property>
+  
+  <property name="emailsecondary">
+  <column name="Email_Secondary"/>
+  </property>
+  
+  <property name="emailprimary">
+  <column name="Email_Primary"/>
+  </property>
+  
+  <property name="zipcode">
+  <column name="ZipPostalCode"/>
+  </property>
+  
+  <property name="bloodgroup">
+  <column name="BloodGroup"/>
+  </property>
+  
+  <property name="height">
+  <column name="Height"/>
+  </property>
+  
+  <property name="weight">
+  <column name="Weight"/>
+  </property>
+  
+  <property name="sex">
+  <column name="Sex"/>
+  </property>
+  
+  <property name="birthdate">
+  <column name="Birthdate"/>
+  </property>
+  
+ </class>
+</hibernate-mapping>
+

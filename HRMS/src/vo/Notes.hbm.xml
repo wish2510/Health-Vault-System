@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    
+    <class name="vo.NotesVO" table="Notes">
+        
+        <id name="noteid" type="long" column="NotesID">
+        <generator class="increment"/>
+        </id>
+        
+        
+        <property name="userrecordid">
+        <column name="UserRecordID"/>
+        </property>
+        
+        <property name="note">
+        <column name="Note"/>
+        </property>
+        
+        <property name="notetype">
+        <column name="NoteType"/>
+        </property>
+       
+        <property name="notedate">
+        <column name="NoteDate"/>
+        </property>
+       
+        <property name="discription">
+        <column name="Description"/>
+        </property>
+        
+        
+    </class>
+        
+    
+</hibernate-mapping>
+

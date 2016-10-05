@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.vo_state" table="state">
+  <id name="id" type="long" column="ID" >
+   <generator class="increment"/>
+  </id>
+
+<property name="stateid">
+  <column name="state_id"/>
+  </property>
+  
+  <property name="name">
+  <column name="state_name"/>
+  </property>
+  <property name="desc">
+  <column name="state_desc"/>
+  </property>
+  
+  <property name="ctrid">
+  <column name="ctr_id_f"/>
+  </property>
+  
+ </class>
+</hibernate-mapping>
+
